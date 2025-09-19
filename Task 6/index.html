@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Freelance Admin Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+<div class="brand">FreelanceCo</div>
+<nav>
+<a href="#/overview" data-route class="active">Overview</a>
+<a href="#/projects" data-route>Projects</a>
+<a href="#/profile" data-route>Profile Settings</a>
+</nav>
+<div class="sidebar-footer">© 2025</div>
+</aside>
+<div class="main">
+<header class="topbar">
+<div class="search">
+<input id="searchInput" placeholder="Search projects or clients">
+</div>
+<div class="top-actions">
+<div class="notifications">
+<button id="notifBtn">Notifications <span id="notifCount" class="badge"></span></button>
+<div id="notifDropdown" class="notif-dropdown">
+<ul id="notifList"></ul>
+</div>
+</div>
+<div class="profile">UH</div>
+</div>
+</header>
+<main id="view" class="view"></main>
+</div>
+</div>
+<script src"script.js" type="module"></script>
+</body>
+</html>

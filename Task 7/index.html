@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Real-Time Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container header-inner">
+      <h1>Build a Real-Time Weather Dashboard</h1>
+      <form id="searchForm" class="search">
+        <input id="cityInput" type="text" placeholder="Search city (e.g. London)" required />
+        <button id="searchBtn" type="submit">Search</button>
+        <button id="locBtn" type="button">Use My Location</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section id="status" class="status hidden">Loading…</section>
+    <section id="cards" class="cards"></section>
+  </main>
+
+  <template id="cardTemplate">
+    <article class="card">
+      <header class="card-head">
+        <div class="city-name"></div>
+        <div class="temp-main"></div>
+      </header>
+      <div class="meta">
+        <img class="icon" alt="weather icon" />
+        <div class="desc"></div>
+      </div>
+      <div class="details">
+        <div>Humidity: <span class="humidity"></span>%</div>
+        <div>Wind: <span class="wind"></span> m/s</div>
+      </div>
+      <div class="forecast"></div>
+      <footer class="card-foot">
+        <button class="remove">Remove</button>
+      </footer>
+    </article>
+  </template>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
